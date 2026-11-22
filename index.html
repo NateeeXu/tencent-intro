@@ -378,7 +378,7 @@ img.chipphoto{width:19rem;height:auto;filter:drop-shadow(0 1rem 1.6rem rgba(0,0,
 .pz-is{margin-top:.4rem;font-family:var(--display);font-size:5.4rem;font-weight:800;line-height:1.2;letter-spacing:-.01em;color:var(--ink)}
 .pz-is span{color:var(--brand)}
 .pz-keys{list-style:none;margin:4.4rem 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem}
-.pz-keys li{padding:2.6rem 2.4rem;border-radius:1.6rem;background:#fff;overflow:hidden}
+.pz-keys li{padding:0 2.4rem 2.6rem;border-radius:1.6rem;background:#fff;overflow:hidden}
 .pz-from{margin:0 -2.4rem 2.4rem;padding:1.3rem 2.4rem;background:#F0F2F7;font-size:1.45rem;line-height:1.45;color:#6E6E73}
 .pz-from b{display:block;margin-bottom:.2rem;font-size:1.2rem;font-weight:600;letter-spacing:.06em;color:#AEAEB2}
 .pz-from b::after{content:"中的问题";font-weight:500}
@@ -392,7 +392,7 @@ img.chipphoto{width:19rem;height:auto;filter:drop-shadow(0 1rem 1.6rem rgba(0,0,
 /* 腾讯版（11-22）：卡片顶上保留「竞品 / 市场中的问题」灰条，左右分栏后要压紧一点才放得进一屏 */
 .pz-split .pz-is{font-size:4.6rem}
 .pz-split .pz-keys{margin-top:3rem;gap:1.2rem}
-.pz-split .pz-keys li{padding:1.8rem 2.2rem}
+.pz-split .pz-keys li{padding:0 2.2rem 1.8rem}   /* 灰条贴卡片顶边，上面不留白 */
 .pz-split .pz-from{margin:0 -2.2rem 1.4rem;padding:.9rem 2.2rem;white-space:nowrap}
 .pz-split .pz-from b{display:inline;margin:0 .8rem 0 0}
 .pz-split .pz-keys h3{font-size:2.5rem}
@@ -1379,7 +1379,7 @@ img.chipphoto{width:19rem;height:auto;filter:drop-shadow(0 1rem 1.6rem rgba(0,0,
   .pz-we{font-size:1.6rem}
   .pz-is{font-size:3rem}
   .pz-keys{margin-top:2.4rem;gap:1rem}
-  .pz-keys li{padding:1.6rem 1.6rem}
+  .pz-keys li{padding:0 1.6rem 1.6rem}
   .pz-keys h3{font-size:2rem}
   .pz-keys li > span{font-size:1.35rem}
   .pz-home{width:24rem;justify-self:center}
@@ -1562,7 +1562,8 @@ img.chipphoto{width:19rem;height:auto;filter:drop-shadow(0 1rem 1.6rem rgba(0,0,
   /* 用户 11-22「排版不太行」：复盘标题在「业务」后面断行，「增长。」掉到第二行。手机上按逗号断：「从产品交付，」/「走向业务增长。」 */
   #reflect .opp-title span{display:block;white-space:nowrap}
   /* 腾讯版（11-22）：产品定位卡片顶上的灰条在手机上两行放（标签一行、问题一行），不截断 */
-  .pz-split .pz-from{white-space:normal;margin-bottom:1.4rem}
+  .pz-split .pz-keys li{padding:0 1.6rem 1.6rem}
+  .pz-split .pz-from{white-space:normal;margin:0 -1.6rem 1.4rem;padding:.9rem 1.6rem}
   .pz-split .pz-from b{display:block;margin:0 0 .2rem}
   /* 「如何让用户 / 持续获得价值？」按语义断行，别把「值？」单独掉下去 */
   .gr .opp-title span{display:block;white-space:nowrap}
